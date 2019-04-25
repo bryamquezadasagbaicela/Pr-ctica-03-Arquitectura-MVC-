@@ -5,10 +5,51 @@
  */
 package ec.edu.est.Controladores;
 
+import ec.edu.est.Clases.Megalodon;
+import java.util.Map;
+import java.util.TreeMap;
+
 /**
  *
  * @author 59398
  */
 public class ControladorMegalodon {
+
+    private Map<Integer, Megalodon> lista;
+    private int codigo;
+
+    public ControladorMegalodon() {
+        lista = new TreeMap<>();
+        codigo =0;
+
+    }
+
+    public void create(Megalodon objeto) {
+        codigo ++;
+        objeto.setCodigo(codigo);
+        lista.put(codigo, objeto);
+    }
+
+    public Megalodon read(int codigo) {
+ 
+               return lista.get(codigo); 
+        }
+        
+    public void update(Megalodon objeto) {
+        lista.put(objeto.getCodigo(), objeto);
+    }
+
+    public void delete(int codigo) {
+       
+               lista.remove(codigo);
+               
+            }
     
-}
+    public void imprimir(){
+        System.out.println("lista ordenada");
+            System.out.println(lista.entrySet());
+        }
+    }
+
+
+
