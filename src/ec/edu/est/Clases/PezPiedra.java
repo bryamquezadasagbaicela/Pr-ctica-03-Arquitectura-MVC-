@@ -9,7 +9,7 @@ import ec.edu.est.Interfaz.Acciones;
 
 /**
  *
- * @author 59398
+ * @author QuezadaBryam
  */
 public final class PezPiedra extends Acuatico implements Acciones {
 
@@ -33,13 +33,15 @@ public final class PezPiedra extends Acuatico implements Acciones {
         this.neurotoxina = neurotoxina;
     }
 
-    public PezPiedra(String nombre, String tipoReproduccion, String sexo, String termino,int codigo, int numeroAletas, boolean aguaSalada, int numeroEspinas, boolean venenoso, boolean camuflaje, boolean neurotoxina, boolean resisteFueraAgua, boolean exotico) {
-        super(nombre, tipoReproduccion, sexo, termino,codigo, numeroAletas, aguaSalada, numeroEspinas, venenoso);
+    public PezPiedra(boolean camuflaje, boolean neurotoxina, boolean resisteFueraAgua, boolean exotico, int numeroAletas, boolean aguaSalada, int numeroEspinas, boolean venenoso, String nombre, String tipoReproduccion, String sexo, String termino) {
+        super(numeroAletas, aguaSalada, numeroEspinas, venenoso, nombre, tipoReproduccion, sexo, termino);
         this.camuflaje = camuflaje;
         this.neurotoxina = neurotoxina;
         this.resisteFueraAgua = resisteFueraAgua;
         this.exotico = exotico;
     }
+
+
 
     /**
      * creacion de getters y setters

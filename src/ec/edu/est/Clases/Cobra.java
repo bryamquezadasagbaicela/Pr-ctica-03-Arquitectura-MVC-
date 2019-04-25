@@ -9,7 +9,7 @@ import ec.edu.est.Interfaz.Acciones;
 
 /**
  *
- * @author 59398
+ * @author QuezadaBryam
  */
 public final class Cobra extends Terrestre implements Acciones {
 
@@ -35,17 +35,13 @@ public final class Cobra extends Terrestre implements Acciones {
         this.venenoso = venenoso;
     }
 
-    public Cobra(int codig, String nombr, String tipor, String sexo, String termin, int numga, int numpa, int numca, boolean depso, boolean inve, boolean vene, boolean muda, boolean sensor) {
-        super(nombr, termin, sexo, tipor, codig, numga, numpa, numca, depso);
+    public Cobra(boolean invertebrado, boolean venenoso, boolean mudarPiel, boolean sensorInfrarrojo, int numeroGarras, int numeroPatas, int numeroDientesCaninos, boolean depredadorSolitario, String nombre, String tipoReproduccion, String sexo, String termino) {
+        super(numeroGarras, numeroPatas, numeroDientesCaninos, depredadorSolitario, nombre, tipoReproduccion, sexo, termino);
         this.invertebrado = invertebrado;
         this.venenoso = venenoso;
         this.mudarPiel = mudarPiel;
         this.sensorInfrarrojo = sensorInfrarrojo;
     }
-
-
-
-
 
     /**
      * creacion de los getters y setters

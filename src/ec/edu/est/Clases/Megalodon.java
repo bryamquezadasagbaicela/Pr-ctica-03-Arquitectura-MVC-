@@ -9,7 +9,7 @@ import ec.edu.est.Interfaz.Acciones;
 
 /**
  *
- * @author 59398
+ * @author QuezadaBryam
  */
 
     public final class Megalodon extends Acuatico implements Acciones {
@@ -34,16 +34,12 @@ import ec.edu.est.Interfaz.Acciones;
         this.numeroIlerasDientes = numeroIlerasDientes;
     }
 
-    public Megalodon(String nombre, String tipoReproduccion, String sexo, String termino,int codigo, int numeroAletas, boolean aguaSalada, int numeroEspinas, boolean venenoso, boolean depredadorSolitario, int numeroIlerasDientes, boolean canibal, boolean extinto) {
-        super(nombre, tipoReproduccion, sexo, termino,codigo, numeroAletas, aguaSalada, numeroEspinas, venenoso);
+    public Megalodon(boolean depredadorSolitario, int numeroIlerasDientes, boolean canibal, boolean extinto, int numeroAletas, boolean aguaSalada, int numeroEspinas, boolean venenoso, String nombre, String tipoReproduccion, String sexo, String termino) {
+        super(numeroAletas, aguaSalada, numeroEspinas, venenoso, nombre, tipoReproduccion, sexo, termino);
         this.depredadorSolitario = depredadorSolitario;
         this.numeroIlerasDientes = numeroIlerasDientes;
         this.canibal = canibal;
         this.extinto = extinto;
-    }
-
-    public Megalodon(String nom, String tip, String sex, String ter, int numg, int nump, int numc, boolean deps, boolean inv, boolean ven, boolean mud, boolean sen, boolean inv0) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     /**

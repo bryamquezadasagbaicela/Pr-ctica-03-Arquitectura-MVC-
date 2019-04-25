@@ -7,7 +7,7 @@ package ec.edu.est.Clases;
 
 /**
  *
- * @author 59398
+ * @author QuezadaBryam
  */
 public abstract class Acuatico extends Carnivoro {
     public abstract void sangreFria();
@@ -33,13 +33,14 @@ public abstract class Acuatico extends Carnivoro {
         this.aguaSalada = aguaSalada;
     }
 
-    public Acuatico( String nombre, String tipoReproduccion, String sexo, String termino, int codigo, int numeroAletas, boolean aguaSalada, int numeroEspinas, boolean venenoso) {
-        super(codigo, nombre, tipoReproduccion, sexo, termino);
+    public Acuatico(int numeroAletas, boolean aguaSalada, int numeroEspinas, boolean venenoso, String nombre, String tipoReproduccion, String sexo, String termino) {
+        super(nombre, tipoReproduccion, sexo, termino);
         this.numeroAletas = numeroAletas;
         this.aguaSalada = aguaSalada;
         this.numeroEspinas = numeroEspinas;
         this.venenoso = venenoso;
     }
+
 
     /**
      * getters y setters atributos clase acuatico

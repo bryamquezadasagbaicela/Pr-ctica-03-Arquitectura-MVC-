@@ -7,7 +7,7 @@ package ec.edu.est.Interfaz;
 
 /**
  *
- * @author 59398
+ * @author QuezadaBryam
  */
 public interface Acciones {
 

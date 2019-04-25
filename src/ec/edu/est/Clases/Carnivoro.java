@@ -7,7 +7,7 @@ package ec.edu.est.Clases;
 
 /**
  *
- * @author 59398
+ * @author QuezadaBryam
  */
 public class Carnivoro implements Comparable<Carnivoro>{
      int codigo;
@@ -23,13 +23,12 @@ public class Carnivoro implements Comparable<Carnivoro>{
 
     }
 
-    public Carnivoro(int codigo, String nombre) {
-        this.codigo = codigo;
+    public Carnivoro(String nombre, String sexo) {
         this.nombre = nombre;
+        this.sexo = sexo;
     }
 
-    public Carnivoro(int codigo, String nombre, String tipoReproduccion, String sexo, String termino) {
-        this.codigo = codigo;
+    public Carnivoro(String nombre, String tipoReproduccion, String sexo, String termino) {
         this.nombre = nombre;
         this.tipoReproduccion = tipoReproduccion;
         this.sexo = sexo;

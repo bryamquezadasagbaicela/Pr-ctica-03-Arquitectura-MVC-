@@ -11,7 +11,7 @@ import java.util.TreeSet;
 
 /**
  *
- * @author 59398
+ * @author QuezadaBryam
  */
 public class ControladorPezPiedra {
   

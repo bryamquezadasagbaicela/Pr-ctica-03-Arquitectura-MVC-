@@ -9,7 +9,7 @@ import ec.edu.est.Interfaz.Acciones;
 
 /**
  *
- * @author 59398
+ * @author QuezadaBryam
  */
 public final class TiranosaurioRex extends Terrestre implements Acciones {
 
@@ -33,8 +33,8 @@ public final class TiranosaurioRex extends Terrestre implements Acciones {
         this.alimentoCarroño = alimentoCarroño;
     }
 
-    public TiranosaurioRex(String nombre, String tipoReproduccion, String sexo, String termino,int codigo, int numeroGarras, int numeroPatas, int numeroDientesCaninos, boolean depredadorSolitario, boolean extinto, boolean alimentoCarroño, boolean capacidadSensorial, boolean canibal) {
-        super(nombre, tipoReproduccion, sexo, termino,codigo, numeroGarras, numeroPatas, numeroDientesCaninos, depredadorSolitario);
+    public TiranosaurioRex(boolean extinto, boolean alimentoCarroño, boolean capacidadSensorial, boolean canibal, int numeroGarras, int numeroPatas, int numeroDientesCaninos, boolean depredadorSolitario, String nombre, String tipoReproduccion, String sexo, String termino) {
+        super(numeroGarras, numeroPatas, numeroDientesCaninos, depredadorSolitario, nombre, tipoReproduccion, sexo, termino);
         this.extinto = extinto;
         this.alimentoCarroño = alimentoCarroño;
         this.capacidadSensorial = capacidadSensorial;

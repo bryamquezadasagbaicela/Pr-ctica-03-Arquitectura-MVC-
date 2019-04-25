@@ -11,7 +11,7 @@ import java.util.Set;
 
 /**
  *
- * @author 59398
+ * @author QuezadaBryam
  */
 public class ControladorTiranosaurioRex {
    
@@ -54,5 +54,11 @@ public class ControladorTiranosaurioRex {
             }
         }
         
+    }
+
+    public void imprimir() {
+        for (TiranosaurioRex tiranosaurioRex : lista) {
+            System.out.println(tiranosaurioRex.getNombre());
+        }
     }
 }

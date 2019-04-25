@@ -7,7 +7,7 @@ package ec.edu.est.Clases;
 
 /**
  *
- * @author 59398
+ * @author QuezadaBryam
  */
 public abstract class Terrestre extends Carnivoro {
 
@@ -35,13 +35,14 @@ public abstract class Terrestre extends Carnivoro {
         this.numeroPatas = numeroPatas;
     }
 
-    public Terrestre(String nombre, String tipoReproduccion, String sexo, String termino,int codigo,  int numeroGarras, int numeroPatas, int numeroDientesCaninos, boolean depredadorSolitario) {
-        super(codigo, nombre, tipoReproduccion, sexo, termino);
+    public Terrestre(int numeroGarras, int numeroPatas, int numeroDientesCaninos, boolean depredadorSolitario, String nombre, String tipoReproduccion, String sexo, String termino) {
+        super(nombre, tipoReproduccion, sexo, termino);
         this.numeroGarras = numeroGarras;
         this.numeroPatas = numeroPatas;
         this.numeroDientesCaninos = numeroDientesCaninos;
         this.depredadorSolitario = depredadorSolitario;
     }
+
 
     /**
      * getters y setters atributos de la clase Terrestre

@@ -11,15 +11,16 @@ import java.util.List;
 
 /**
  *
- * @author 59398
+ * @author QuezadaBryam
  */
 public class ControladorCobra {
+
     private List<Cobra> lista;
     private int contador;
 
     public ControladorCobra() {
         lista = new ArrayList<>();
-        contador =0;
+        contador = 0;
     }
 
     public void create(Cobra objeto) {
@@ -57,6 +58,12 @@ public class ControladorCobra {
             }
         }
 
+    }
+
+    public void imprimir() {
+        for (int i = 0; i < lista.size(); i++) {
+            System.out.println(lista.get(i).getNombre());
+        }
     }
 
 }
